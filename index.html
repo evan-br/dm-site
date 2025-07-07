@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D&M Engenharia Digital</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --aqua: #6dbcb6;
+      --beige: #e9e4d9;
+      --muted-teal: #4a7c7a;
+      --light-gray: #f7f7f7;
+      --dark-text: #2f3e46;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--light-gray);
+      color: var(--dark-text);
+    }
+    .navbar {
+      background-color: var(--beige);
+    }
+    .navbar-brand, .nav-link {
+      color: var(--muted-teal) !important;
+    }
+    .responsive-img {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px; /* ajustável conforme necessário */
+  object-fit: contain;
+}
+
+@media (max-width: 767.98px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
+
+
+    
+    .section {
+      padding: 60px 20px;
+    }
+    .bg-muted-teal {
+      background-color: var(--muted-teal);
+      color: white;
+    }
+
+    .bg-muted-meal {
+      background-color: var(--muted-teal);
+      color: white;
+      opacity: 0.4;
+    }
+
+    .btn-aqua {
+      background-color: var(--aqua);
+      color: white;
+    }
+    .btn-aqua:hover {
+      background-color: #5aa5a0;
+    }
+    footer {
+      background-color: var(--beige);
+      text-align: center;
+      padding: 20px;
+    }
+
+   /*  efeito fundo*/ 
+    .hero {
+  position: relative;
+  min-height: auto;
+  background-color: #f8f9fa;
+  overflow: hidden;
+}
+
+.parallax-bg {
+  position: absolute;
+  top: -25%;
+  left: 20%;
+  height: 140%;
+  aspect-ratio: 3 / 4; /* ou ajuste conforme necessário */
+  background-image: url('/fundo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  /* 💡 Efeitos para disfarçar baixa resolução */
+  filter: blur(6px);
+  opacity: 0.2;
+
+  z-index: 0;
+  will-change: transform;
+  pointer-events: none; /* impede cliques sobre a imagem */
+}
+  </style>
+
+
+
+
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+  <img src="/logo.png" alt="Logo" height="30" class="d-inline-block align-text-top me-2">
+  D&M Engenharia Digital
+</a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#sobre">Visão Geral</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#problema">Problema</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#solucao">Solução</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#software">Software</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contato">Contato</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <section class="hero position-relative overflow-hidden" id="home">
+  <div class="container position-relative z-1 py-5">
+    <h1 class="display-5 fw-bold">
+      <br>Inovação com impacto direto no canteiro de obras.
+    </h1>
+    <p class="lead">
+      Digitalize o planejamento de obras com inteligência artificial e reduza desperdícios, prazos e custos.
+    </p>
+    <a href="#contato" class="btn btn-aqua mt-3">Solicite uma Demonstração</a>
+  </div>
+</section>
+
+<section class="section position-relative overflow-hidden" id="sobre">
+  <div class="parallax-bg"></div>
+  <div class="container position-relative z-1">
+    <div class="row">
+      <div class="col-md-6 px-4">
+        <h2 class="mb-4">Quem Somos</h2>
+        <p>A D&M Engenharia Digital nasceu da experiência prática das fundadoras com os desafios reais da construção civil. Oferecemos tecnologia acessível e eficiente para tornar obras mais sustentáveis e precisas.</p>
+        <ul>
+          <li>+40% mais agilidade no planejamento</li>
+          <li>Até 25% de redução de desperdícios</li>
+          <li>Interpretação automática de DWGs e PDFs</li>
+        </ul>
+      </div>
+      <div class="col-md-6 d-none d-md-block">
+        <img src="/img1.jpg" alt="Equipe reunida com plantas" class="img-fluid rounded shadow responsive-img hide-mobile">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-muted-meal" id="problema">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 d-none d-md-block">
+        <img src="/img2.jpg" alt="Profissional com tablet" class="img-fluid rounded shadow responsive-img hide-mobile">
+      </div>
+      <div class="col-md-6 px-4">
+        <h2 class="mb-4">O Problema</h2>
+        <p>A construção civil sofre com processos manuais, retrabalhos e falhas de compatibilização. Isso gera atrasos, aumento de custos e desperdício de materiais.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="solucao">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 px-4">
+        <h2 class="mb-4">Nossa Solução</h2>
+        <p>O D&M EngeQuant é um software de inteligência artificial que lê e interpreta projetos técnicos automaticamente, gerando quantitativos com precisão, promovendo produtividade e redução de custos.</p>
+      </div>
+      <div class="col-md-6 d-none d-md-block">
+        <img src="/img3.jpg" alt="Ferramentas sobre planta técnica" class="img-fluid rounded shadow responsive-img hide-mobile">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-muted-teal" id="software">
+  <div class="container">
+    <div class="text-center mt-4">
+      <img src="/img3.png" alt="Inteligência Artificial aplicada à engenharia" class="img-fluid rounded shadow responsive-img hide-mobile" style="max-width: 800px;">
+    </div>
+    <br><br>
+    <h2 class="mb-4">Conheça o D&M EngeQuant</h2>
+    <p>Desenvolvido especialmente para empresas da construção civil, o D&M IntelliQuant automatiza a leitura de projetos (DWG, PDF), identificando elementos construtivos e convertendo-os em quantitativos úteis para o planejamento e execução de obras.</p>
+    <ul>
+      <li>Leitura Inteligente com IA</li>
+      <li>Planejamento Ágil</li>
+      <li>Redução de Desperdícios</li>
+      <li>Controle Orçamentário</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="contato">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 px-4">
+        <h2 class="mb-4">Entre em Contato</h2>
+        <p>Preencha o formulário abaixo para agendar uma reunião ou solicitar uma proposta personalizada.</p>
+        <form action="https://formspree.io/f/myzjqzza" method="POST">
+  <div class="mb-3">
+    <label for="nome" class="form-label">Nome</label>
+    <input type="text" name="nome" class="form-control" id="nome" required>
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" name="email" class="form-control" id="email" required>
+  </div>
+  <div class="mb-3">
+    <label for="mensagem" class="form-label">Mensagem</label>
+    <textarea name="mensagem" class="form-control" id="mensagem" rows="4"></textarea>
+  </div>
+  <button type="submit" class="btn btn-aqua">Enviar</button>
+</form>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 D&M Engenharia Digital. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+  window.addEventListener('scroll', () => {
+    const bg = document.querySelector('.parallax-bg');
+    const offset = window.scrollY;
+    bg.style.transform = `translateY(${offset * 0.4}px)`; // valor menor = movimento mais suave
+  });
+</script>
+</body>
+</html>
